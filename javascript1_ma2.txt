@@ -1,0 +1,21 @@
+//MODULE ASSIGNMENT 2 - LEVEL 2 Process
+
+1. What is a function literal?
+When you assign a function as the value of a variable it's called a function literal. It's also refered to as an anonymous function.
+
+2. What is the constructor?
+------
+
+3. What does the return statement do?
+The return statement makes a function stop executing and returns a value.
+
+4. What will be written to the console from this function:
+		function myFunction(){
+			  return console.log('inside my function');
+			  console.log('My name is Andy');
+		}
+		myFunction();
+The console will log: 'inside my function'
+
+5. Briefly describe scope in JavaScript.
+There are two types of (variable) scope in JavaScript; global and local. In the global scope the variables are placed outside of functions, usually at the top of the script. They can be used or edited/manipulated by all functions. If the variables are placed inside a function the scope is local. Variables in local scope are not accessible to other functions and can only be used by the function they are assigned to. They should be declared with var before each variable.
