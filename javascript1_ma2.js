@@ -20,12 +20,15 @@ var fruitChange = {Strawberries: "<b>Bananas</b>",
                    strawberries: "<b>bananas</b>",
                    Strawberry: "<b>Banana</b>",
                    strawberry: "<b>banana</b>"};
+var footCarArray = ["Rosenborg", "Molde", "Brann", "Haugesund", "Kristiansund BK"];
+
 
 // function to show initial results
 function taskOrigin() {
     result2.innerHTML = myArray.join(", ");
     result3.innerHTML = myArray.join(", ");
     result4.innerHTML = fruitString;
+    result5.innerHTML = footCarArray.join(", ");
 }
 
 //1. Create a function that displays prototypal inheritance
@@ -48,8 +51,19 @@ changeFruitBtn.onclick = function () {
     result4.innerHTML = fruitString;
 };
 //5. Create an array and a button. The array should contain 4 football clubs names. When the button is clicked, remove all elements out of the array that we just created. There after add in 4 names of cars inside that array. Log it to the console.
-
-
+footCarBtn.onclick = function () {
+    if (footCarBtn.innerHTML === "Cars") {
+        footCarArray.splice(0, 5, "Volvo", "BMW", "Saab", "Volkswagen");
+        console.log(footCarArray);
+        result5.innerHTML = footCarArray.join(", ");
+        footCarBtn.innerHTML = "Football Teams";
+        } else {
+            footCarArray.splice(0, 4, "Rosenborg", "Molde", "Brann", "Haugesund", "Kristiansund BK");
+            console.log(footCarArray);
+            result5.innerHTML = footCarArray.join(", ");
+            footCarBtn.innerHTML = "Cars";
+        }
+};
 //6. Create an array of objects with 3 people inside it. Use the filter function to map by a name.
 
 
