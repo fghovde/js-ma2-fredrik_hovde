@@ -1,6 +1,31 @@
 //MODULE ASSIGNMENT 2 - LEVEL 1
-//1. Create a function that displays prototypal inheritance
 
+// link to elements
+var result1 = document.getElementById("result1");
+var result2 = document.getElementById("result2");
+var cut5thBtn = document.getElementById("cut5thBtn");
+var result3 = document.getElementById("result3");
+var cutLastBtn = document.getElementById("cutLastBtn");
+var result4 = document.getElementById("result4");
+var changeFruitBtn = document.getElementById("changeFruitBtn");
+var result5 = document.getElementById("result5");
+var footCarBtn = document.getElementById("footCarBtn");
+var result6 = document.getElementById("result6");
+var result7 = document.getElementById("result7");
+
+// global variables
+var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// function to show initial results
+function taskOrigin() {
+    result2.innerHTML = myArray.join(", ");
+    result3.innerHTML = myArray.join(", ");
+}
+
+//1. Create a function that displays prototypal inheritance
+cut5thBtn.onclick = function () {
+    result2.innerHTML = myArray.slice(4, 5);
+};
 
 //2. Create an array of numbers from 1 - 10; slice the 5th number in the array
 
