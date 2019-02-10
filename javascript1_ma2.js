@@ -21,7 +21,9 @@ var fruitChange = {Strawberries: "<b>Bananas</b>",
                    Strawberry: "<b>Banana</b>",
                    strawberry: "<b>banana</b>"};
 var footCarArray = ["Rosenborg", "Molde", "Brann", "Haugesund", "Kristiansund BK"];
-
+var peopleArray = [{firstName: "Knut", lastName: "Haraldsen", age: "23", gender: "fluid"},
+                   {firstName: "Ola", lastName: "Nikolaisen", age: "35", gender: "male"},
+                   {firstName: "Kari", lastName: "Sputnik", age: "32", gender: "female"}];
 
 // function to show initial results
 function taskOrigin() {
@@ -68,5 +70,11 @@ footCarBtn.onclick = function () {
 
 
 //7. Create a simple function that logs the date.
+function whatsTheDate () {
+    console.log(new Date);
+    result7.innerHTML = new Date();
+}
 
+//calling functions
+whatsTheDate();
 taskOrigin();
