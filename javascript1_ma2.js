@@ -70,8 +70,8 @@ footCarBtn.onclick = function () {
 
 
 //7. Create a simple function that logs the date.
-function whatsTheDate () {
-    console.log(new Date);
+function whatsTheDate() {
+    console.log(new Date());
     result7.innerHTML = new Date();
 }
 
