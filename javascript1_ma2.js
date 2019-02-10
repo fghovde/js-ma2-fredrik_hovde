@@ -26,9 +26,12 @@ function taskOrigin() {
 cut5thBtn.onclick = function () {
     result2.innerHTML = myArray.slice(4, 5);
 };
-
 //2. Create an array of numbers from 1 - 10; slice the 5th number in the array
-
+cutLastBtn.onclick = function () {
+    myArray.splice(-1);
+    // myArray.pop();
+    result3.innerHTML = myArray.join(", ");
+};
 
 //3. Delete the last number in the array that you created above.
 
