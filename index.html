@@ -1,10 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>JS - MA2 - Fredrik G. Hovde</title>
+    <style>
+        body {font-family: sans-serif;margin: auto;}
+        button {flex: 1;padding: 20px;width: 100%;margin-bottom: 15px;}
+        b {color: red;}
+        h2 {margin: 50px 0 0 0;}
+        .result {flex: 1;padding: 20px;background: #eee;width: auto;min-height: 20px;margin: 15px 0;}
+        .wrapper {display: flex;flex-direction: column;width: 800px;margin: auto;border-bottom: 1px #ccc solid;}
+        .light_text {color: #ccc;letter-spacing: 5px;text-transform: uppercase;}
+        .inner_wrap {display: inline-flex;}
+    </style>
 </head>
 
 <body>
-
+    <div class="wrapper">
+        <h1 id="heading">Level 1 Process</h1>
+        <p>Javascript 1 - MA2 - Fredrik Gjerde Hovde.</p>
+    </div>
+    <div class="wrapper">
+        <h2>Task 1: Prototypal Inheritance</h2>
+        <div id="result1" class="result"><span class="light_text">Result</span></div>
+    </div>
+    <div class="wrapper">
+        <h2>Task 2: Slice the 5th Number</h2>
+        <div id="result2" class="result"><span class="light_text">Result</span></div>
+        <div class="inner_wrap">
+        <button id="cut5thBtn">Slice</button>
+        </div>
+    </div>
+    <div class="wrapper">
+        <h2>Task 3: Delete the Last Number</h2>
+        <div id="result3" class="result"><span class="light_text">Result</span></div>
+        <div class="inner_wrap">
+        <button id="cutLastBtn">Splice</button>
+        </div>
+    </div>
+    <div class="wrapper">
+        <h2>Task 4: Change Fruit Mentions</h2>
+        <div id="result4" class="result"><span class="light_text">Result</span></div>
+        <button id="changeFruitBtn">Change to banana</button>
+    </div>
+    <div class="wrapper">
+        <h2>Task 5: Array of Footballteams or Cars</h2>
+        <div id="result5" class="result"><span class="light_text">Result</span></div>
+        <button id="footCarBtn">Cars</button>
+    </div>
+    <div class="wrapper">
+        <h2>Task 6: Filter People</h2>
+        <div id="result6" class="result"><span class="light_text">Result</span></div>
+        <button id="pplFilterBtn">Map by name</button>
+    </div>
+    <div class="wrapper">
+        <h2>Task 7: Todays date</h2>
+        <div id="result7" class="result">Todays date is:</div>
+    </div>
+    
 <script src="javascript1_ma2.js"></script> 
 </body>
 </html>
